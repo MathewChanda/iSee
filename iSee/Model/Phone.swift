@@ -8,8 +8,10 @@
 import Foundation
 class Phone {
     var name : String?
-    var price : Int?
+    var price : Double?
     var description : String?
     var company : String?
     var features : [String]?
+    var url : String?
+    var photo: String?
 }

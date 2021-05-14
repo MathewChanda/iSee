@@ -8,7 +8,7 @@
 import UIKit
 
 class WishlistViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-   
+    static var phones : [Phone] = []
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,15 +18,25 @@ class WishlistViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableView.delegate = self
         tableView.rowHeight = 150
         
-        print("downloaded data")
+        NotificationCenter.default.addObserver(self, selector: #selector(loadTableData(notification:)), name: NSNotification.Name(rawValue: "loadTableData"), object: nil)
+    }
+    
+    @objc func loadTableData(notification: Notification){
+            self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return WishlistViewController.phones.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WishlistCell") as! WishlistCell
+        let phone =  WishlistViewController.phones[indexPath.row]
+        
+        cell.name.text = phone.name
+        cell.Price.text = "Price: \(phone.price ?? 799.00)"
+        cell.phone = phone
+        
         return cell; 
     }
     

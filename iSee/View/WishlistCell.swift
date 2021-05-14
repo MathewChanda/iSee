@@ -11,6 +11,8 @@ class WishlistCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var Price: UILabel!
     @IBOutlet weak var itemPic: UIImageView!
+    var phone : Phone?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

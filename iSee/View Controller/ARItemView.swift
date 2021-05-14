@@ -30,7 +30,21 @@ class ARItemView: UIViewController {
         backButton.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
     }
     
-
+    @IBAction func addWishlist(_ sender: Any) {
+        self.dismiss(animated: true) {
+            var phone : Phone = Phone();
+            phone.name = "Samsung Galaxy S6"
+            phone.price = 399
+            phone.company = "Samsung"
+            phone.features = []
+            phone.description = "Powerful to use and beautiful to behold. The slim and lightweight, all-metal body and glass design make a bold statement, while the lightning-fast Samsung Exynos® 7420 Octa-core 64-bit processor delivers the most power and speed we’ve ever put in a smartphone."
+            phone.url = "samsung.com/us/mobile/phones/galaxy-s/samsung-galaxy-s6-32gb-t-mobile-gold-platinum-sm-g920tzdatmb/#"
+            WishlistViewController.phones.append(phone)
+            print(WishlistViewController.phones)
+            NotificationCenter.default.post(name: Notification.Name("loadTableData"), object: nil)
+        }
+    }
+    
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true) {
             
