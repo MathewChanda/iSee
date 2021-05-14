@@ -16,6 +16,9 @@
 		AF0C4D9D264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D95264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf */; };
 		AF0C4D9E264E39AF00B3E766 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D96264E39AF00B3E766 /* SF-Compact-Text-Regular.otf */; };
 		AF0C4D9F264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D97264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf */; };
+		AF0C4DA1264E620D00B3E766 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */; };
+		AF0C4DA3264E62CC00B3E766 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */; };
+		AF0C4DA5264E69D200B3E766 /* WishlistItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */; };
 		AF60E286264E0BD900C33FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E285264E0BD900C33FE7 /* AppDelegate.swift */; };
 		AF60E288264E0BD900C33FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */; };
 		AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E289264E0BD900C33FE7 /* ViewController.swift */; };
@@ -55,6 +58,9 @@
 		AF0C4D95264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		AF0C4D96264E39AF00B3E766 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		AF0C4D97264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
+		AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItemViewController.swift; sourceTree = "<group>"; };
 		AF60E282264E0BD900C33FE7 /* iSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF60E285264E0BD900C33FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +153,9 @@
 				AF60E290264E0BDB00C33FE7 /* LaunchScreen.storyboard */,
 				AF60E293264E0BDB00C33FE7 /* Info.plist */,
 				AF0C4D8D264E31A200B3E766 /* ARItemView.swift */,
+				AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */,
+				AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */,
+				AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */,
 			);
 			path = iSee;
 			sourceTree = "<group>";
@@ -309,8 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0C4DA3264E62CC00B3E766 /* WishlistCell.swift in Sources */,
 				AF0C4D8E264E31A200B3E766 /* ARItemView.swift in Sources */,
 				AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */,
+				AF0C4DA5264E69D200B3E766 /* WishlistItemViewController.swift in Sources */,
+				AF0C4DA1264E620D00B3E766 /* WishlistViewController.swift in Sources */,
 				AF60E286264E0BD900C33FE7 /* AppDelegate.swift in Sources */,
 				AF60E288264E0BD900C33FE7 /* SceneDelegate.swift in Sources */,
 			);
@@ -486,7 +498,6 @@
 		AF60E2AD264E0BDB00C33FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SKJU27LYK;
@@ -505,7 +516,6 @@
 		AF60E2AE264E0BDB00C33FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SKJU27LYK;

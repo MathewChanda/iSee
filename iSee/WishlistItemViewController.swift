@@ -1,5 +1,5 @@
 //
-//  ARItemView.swift
+//  WishlistItemViewController.swift
 //  iSee
 //
 //  Created by Mathew Chanda on 5/14/21.
@@ -7,18 +7,21 @@
 
 import UIKit
 
-class ARItemView: UIViewController {
-    @IBOutlet weak var wishlistBuiton: UIButton!
-    @IBOutlet weak var label5: UILabel!
-    @IBOutlet weak var label3: UILabel!
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var itemPic: UIImageView!
+class WishlistItemViewController: UIViewController {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var price: UILabel!
     @IBOutlet weak var priceBackground: UIView!
+    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var itemPic: UIImageView!
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
-    @IBOutlet var label8: UIView!
+    
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var label6: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         priceBackground.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
@@ -26,7 +29,6 @@ class ARItemView: UIViewController {
         label2.text = "\u{2022} Super Charging and Cord Free"
         label3.text = "\u{2022} 5.1-inch Quad HD Super AMOLED Screen"
         label4.text = "\u{2022} Long-Lasting 2550 mAh Fast Charging battery"
-        wishlistBuiton.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
         backButton.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
     }
     
@@ -47,14 +49,3 @@ class ARItemView: UIViewController {
     */
 
 }
-
-
-extension UIView {
-    func roundCorners(_ corners:UIRectCorner, radius: CGFloat) {
-    let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-    let mask = CAShapeLayer()
-    mask.path = path.cgPath
-    self.layer.mask = mask
-  }
-}
-
