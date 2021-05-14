@@ -119,6 +119,26 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		AF0C4DA6264E74D200B3E766 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */,
+				AF60E2B7264E0C7700C33FE7 /* ProductInfo.sks */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF0C4DA7264E74EE00B3E766 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C4D8D264E31A200B3E766 /* ARItemView.swift */,
+				AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */,
+				AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */,
+				AF60E289264E0BD900C33FE7 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		AF60E279264E0BD900C33FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -143,19 +163,15 @@
 		AF60E284264E0BD900C33FE7 /* iSee */ = {
 			isa = PBXGroup;
 			children = (
+				AF0C4DA7264E74EE00B3E766 /* View Controller */,
+				AF0C4DA6264E74D200B3E766 /* View */,
 				AF60E285264E0BD900C33FE7 /* AppDelegate.swift */,
 				AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */,
-				AF60E289264E0BD900C33FE7 /* ViewController.swift */,
 				AF60E2B5264E0C6600C33FE7 /* art.scnassets */,
 				AF60E28B264E0BD900C33FE7 /* Main.storyboard */,
-				AF60E2B7264E0C7700C33FE7 /* ProductInfo.sks */,
 				AF60E28E264E0BDB00C33FE7 /* Assets.xcassets */,
 				AF60E290264E0BDB00C33FE7 /* LaunchScreen.storyboard */,
 				AF60E293264E0BDB00C33FE7 /* Info.plist */,
-				AF0C4D8D264E31A200B3E766 /* ARItemView.swift */,
-				AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */,
-				AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */,
-				AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */,
 			);
 			path = iSee;
 			sourceTree = "<group>";
