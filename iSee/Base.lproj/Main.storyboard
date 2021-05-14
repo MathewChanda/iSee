@@ -372,8 +372,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 12" translatesAutoresizingMaskIntoConstraints="NO" id="mHY-z9-ISo">
+                                <rect key="frame" x="3" y="30" width="425" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZI-3v-ZP9">
+                                <rect key="frame" x="212" y="782" width="196" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
+                                <state key="normal" title="Buy from T-Mobile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="buy:" destination="Sbb-8m-IK1" eventType="touchUpInside" id="aRZ-5Y-4vU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTG-aF-RSu">
-                                <rect key="frame" x="25" y="782" width="379" height="36"/>
+                                <rect key="frame" x="23" y="782" width="165" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
@@ -385,10 +402,6 @@
                                     <action selector="back:" destination="Sbb-8m-IK1" eventType="touchUpInside" id="6rc-2M-e3g"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 12" translatesAutoresizingMaskIntoConstraints="NO" id="mHY-z9-ISo">
-                                <rect key="frame" x="3" y="30" width="425" height="359"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z3F-8b-ddT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -397,6 +410,7 @@
                     <navigationItem key="navigationItem" id="jSs-jT-A3y"/>
                     <connections>
                         <outlet property="backButton" destination="qTG-aF-RSu" id="ghC-c8-aG3"/>
+                        <outlet property="buyButton" destination="HZI-3v-ZP9" id="ADa-Es-lQh"/>
                         <outlet property="companyLabel" destination="RHd-Bk-cmm" id="rcn-S2-MqZ"/>
                         <outlet property="descriptionLabel" destination="RHd-Bk-cmm" id="PIa-LW-7Se"/>
                         <outlet property="itemPic" destination="mHY-z9-ISo" id="pko-iH-DZI"/>
@@ -411,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJs-L8-Wg7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="700"/>
+            <point key="canvasLocation" x="1035.981308411215" y="699.78401727861774"/>
         </scene>
     </scenes>
     <resources>

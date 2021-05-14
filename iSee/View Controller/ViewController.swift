@@ -82,6 +82,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let planeNode = SCNNode(geometry: plane)
             planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x - 0.1, objectAnchor.referenceObject.center.y + 0.30, objectAnchor.referenceObject.center.z)
             planeNode.eulerAngles = SCNVector3Make(0, 3.14 / 2, 0);
+            
             node.addChildNode(planeNode)
             
         }
