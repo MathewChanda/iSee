@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="1037.3831775700935" y="-127.64578833693305"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="Ntp-7y-JRZ">
             <objects>
-                <tabBarController interfaceStyle="dark" id="JWi-hT-on4" sceneMemberID="viewController">
+                <tabBarController interfaceStyle="dark" id="JWi-hT-on4" customClass="TabViewController" customModule="iSee" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Jy-Yl-7Jc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

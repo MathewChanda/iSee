@@ -17,6 +17,8 @@ class WishlistViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 150
+        
+        print("downloaded data")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

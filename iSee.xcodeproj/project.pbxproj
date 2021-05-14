@@ -19,6 +19,7 @@
 		AF0C4DA1264E620D00B3E766 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */; };
 		AF0C4DA3264E62CC00B3E766 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */; };
 		AF0C4DA5264E69D200B3E766 /* WishlistItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */; };
+		AF0C4DA9264E75FC00B3E766 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4DA8264E75FC00B3E766 /* TabViewController.swift */; };
 		AF60E286264E0BD900C33FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E285264E0BD900C33FE7 /* AppDelegate.swift */; };
 		AF60E288264E0BD900C33FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */; };
 		AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E289264E0BD900C33FE7 /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		AF0C4DA2264E62CC00B3E766 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
 		AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItemViewController.swift; sourceTree = "<group>"; };
+		AF0C4DA8264E75FC00B3E766 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		AF60E282264E0BD900C33FE7 /* iSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF60E285264E0BD900C33FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				AF0C4DA0264E620D00B3E766 /* WishlistViewController.swift */,
 				AF0C4DA4264E69D200B3E766 /* WishlistItemViewController.swift */,
 				AF60E289264E0BD900C33FE7 /* ViewController.swift */,
+				AF0C4DA8264E75FC00B3E766 /* TabViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0C4DA9264E75FC00B3E766 /* TabViewController.swift in Sources */,
 				AF0C4DA3264E62CC00B3E766 /* WishlistCell.swift in Sources */,
 				AF0C4D8E264E31A200B3E766 /* ARItemView.swift in Sources */,
 				AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */,
