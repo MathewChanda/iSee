@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0C4D8E264E31A200B3E766 /* ARItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4D8D264E31A200B3E766 /* ARItemView.swift */; };
+		AF0C4D98264E39AF00B3E766 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D90264E39AF00B3E766 /* SF-Pro.ttf */; };
+		AF0C4D99264E39AF00B3E766 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D91264E39AF00B3E766 /* SF-Pro-Text-Heavy.otf */; };
+		AF0C4D9A264E39AF00B3E766 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D92264E39AF00B3E766 /* SF-Pro-Display-Regular.otf */; };
+		AF0C4D9B264E39AF00B3E766 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D93264E39AF00B3E766 /* SF-Pro-Display-Bold.otf */; };
+		AF0C4D9C264E39AF00B3E766 /* SF-Compact-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D94264E39AF00B3E766 /* SF-Compact-Display-Regular.otf */; };
+		AF0C4D9D264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D95264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf */; };
+		AF0C4D9E264E39AF00B3E766 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D96264E39AF00B3E766 /* SF-Compact-Text-Regular.otf */; };
+		AF0C4D9F264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4D97264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf */; };
 		AF60E286264E0BD900C33FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E285264E0BD900C33FE7 /* AppDelegate.swift */; };
 		AF60E288264E0BD900C33FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */; };
 		AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E289264E0BD900C33FE7 /* ViewController.swift */; };
@@ -37,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0C4D8D264E31A200B3E766 /* ARItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARItemView.swift; sourceTree = "<group>"; };
+		AF0C4D90264E39AF00B3E766 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		AF0C4D91264E39AF00B3E766 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		AF0C4D92264E39AF00B3E766 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		AF0C4D93264E39AF00B3E766 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		AF0C4D94264E39AF00B3E766 /* SF-Compact-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Regular.otf"; sourceTree = "<group>"; };
+		AF0C4D95264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		AF0C4D96264E39AF00B3E766 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
+		AF0C4D97264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		AF60E282264E0BD900C33FE7 /* iSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF60E285264E0BD900C33FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF60E287264E0BD900C33FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,12 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0C4D8F264E39AF00B3E766 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C4D90264E39AF00B3E766 /* SF-Pro.ttf */,
+				AF0C4D91264E39AF00B3E766 /* SF-Pro-Text-Heavy.otf */,
+				AF0C4D92264E39AF00B3E766 /* SF-Pro-Display-Regular.otf */,
+				AF0C4D93264E39AF00B3E766 /* SF-Pro-Display-Bold.otf */,
+				AF0C4D94264E39AF00B3E766 /* SF-Compact-Display-Regular.otf */,
+				AF0C4D95264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf */,
+				AF0C4D96264E39AF00B3E766 /* SF-Compact-Text-Regular.otf */,
+				AF0C4D97264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AF60E279264E0BD900C33FE7 = {
 			isa = PBXGroup;
 			children = (
 				AF60E284264E0BD900C33FE7 /* iSee */,
 				AF60E29B264E0BDB00C33FE7 /* iSeeTests */,
 				AF60E2A6264E0BDB00C33FE7 /* iSeeUITests */,
+				AF0C4D8F264E39AF00B3E766 /* Fonts */,
 				AF60E283264E0BD900C33FE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +146,7 @@
 				AF60E28E264E0BDB00C33FE7 /* Assets.xcassets */,
 				AF60E290264E0BDB00C33FE7 /* LaunchScreen.storyboard */,
 				AF60E293264E0BDB00C33FE7 /* Info.plist */,
+				AF0C4D8D264E31A200B3E766 /* ARItemView.swift */,
 			);
 			path = iSee;
 			sourceTree = "<group>";
@@ -237,9 +272,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0C4D9C264E39AF00B3E766 /* SF-Compact-Display-Regular.otf in Resources */,
+				AF0C4D9F264E39AF00B3E766 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				AF60E292264E0BDB00C33FE7 /* LaunchScreen.storyboard in Resources */,
+				AF0C4D98264E39AF00B3E766 /* SF-Pro.ttf in Resources */,
+				AF0C4D9B264E39AF00B3E766 /* SF-Pro-Display-Bold.otf in Resources */,
+				AF0C4D9E264E39AF00B3E766 /* SF-Compact-Text-Regular.otf in Resources */,
+				AF0C4D9A264E39AF00B3E766 /* SF-Pro-Display-Regular.otf in Resources */,
 				AF60E2B6264E0C6600C33FE7 /* art.scnassets in Resources */,
+				AF0C4D99264E39AF00B3E766 /* SF-Pro-Text-Heavy.otf in Resources */,
 				AF60E2B8264E0C7700C33FE7 /* ProductInfo.sks in Resources */,
+				AF0C4D9D264E39AF00B3E766 /* SF-Pro-Text-Semibold.otf in Resources */,
 				AF60E28F264E0BDB00C33FE7 /* Assets.xcassets in Resources */,
 				AF60E28D264E0BD900C33FE7 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0C4D8E264E31A200B3E766 /* ARItemView.swift in Sources */,
 				AF60E28A264E0BD900C33FE7 /* ViewController.swift in Sources */,
 				AF60E286264E0BD900C33FE7 /* AppDelegate.swift in Sources */,
 				AF60E288264E0BD900C33FE7 /* SceneDelegate.swift in Sources */,

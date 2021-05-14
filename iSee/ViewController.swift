@@ -39,7 +39,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     //Method called when tap
     @objc func handleTap(rec: UITapGestureRecognizer){
-          print("hello my name is mathew")
+        self.performSegue(withIdentifier: "presentInfo1", sender: Any?.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

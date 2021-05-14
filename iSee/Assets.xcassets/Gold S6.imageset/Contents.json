@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Samsung_Galaxy_S6_32GB_SM-G920A_Android_Smartphone_-_Unlocked_GSM_-_Platinum_Gold_91796.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
