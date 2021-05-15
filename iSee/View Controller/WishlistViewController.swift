@@ -34,8 +34,9 @@ class WishlistViewController: UIViewController,UITableViewDelegate,UITableViewDa
         let phone =  WishlistViewController.phones[indexPath.row]
         
         cell.name.text = phone.name
-        cell.Price.text = "Price: \(phone.price ?? 799.00)"
+        cell.Price.text = String(format: "Price: $%.02f", phone.price!)
         cell.phone = phone
+        cell.itemPic.image = UIImage(named: phone.photo!)
         
         return cell; 
     }
@@ -45,15 +46,11 @@ class WishlistViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+       let cell = sender as! WishlistCell
+       let wishlishItemView = segue.destination as! WishlistItemViewController
+       let phone = WishlistViewController.phones[tableView.indexPath(for: cell)!.row]
+       
+       wishlishItemView.phone = phone; 
     }
-    */
-
 }

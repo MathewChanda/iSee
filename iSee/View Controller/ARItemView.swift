@@ -34,11 +34,12 @@ class ARItemView: UIViewController {
         self.dismiss(animated: true) {
             var phone : Phone = Phone();
             phone.name = "Samsung Galaxy S6"
-            phone.price = 399
+            phone.price = 399.00
             phone.company = "Samsung"
-            phone.features = []
+            phone.features = ["\u{2022} Vivid Images with a Fast, Bright Camera", "\u{2022} Super Charging and Cord Free","\u{2022} 5.1-inch Quad HD Super AMOLED Screen","\u{2022} Long-Lasting 2550 mAh Fast Charging battery"]
             phone.description = "Powerful to use and beautiful to behold. The slim and lightweight, all-metal body and glass design make a bold statement, while the lightning-fast Samsung Exynos® 7420 Octa-core 64-bit processor delivers the most power and speed we’ve ever put in a smartphone."
-            phone.url = "samsung.com/us/mobile/phones/galaxy-s/samsung-galaxy-s6-32gb-t-mobile-gold-platinum-sm-g920tzdatmb/#"
+            phone.url = "https://www.amazon.com/Samsung-Galaxy-G920T-32GB-T-Mobile/dp/B011AC4U7A"
+            phone.photo = "S6 T-Mobile"
             WishlistViewController.phones.append(phone)
             print(WishlistViewController.phones)
             NotificationCenter.default.post(name: Notification.Name("loadTableData"), object: nil)
@@ -72,3 +73,9 @@ extension UIView {
   }
 }
 
+extension Double {
+    func rounded(toPlaces places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}

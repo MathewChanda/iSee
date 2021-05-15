@@ -8,7 +8,7 @@
 import UIKit
 
 class WishlistItemViewController: UIViewController {
-    var url : String = "https://www.t-mobile.com/cell-phone/apple-iphone-12?&cmpid=ADV_PB_P_EVGRNIPHN_43700057785499287_509050768777&gclid=CjwKCAjwv_iEBhASEiwARoemvNNjKPn8opeOAZTWdN7_0VfR4Kfp6_3aQjD_N18E0j3z9lD31VkbGRoCbEMQAvD_BwE&gclsrc=aw.ds"
+    var url : String = "https://www.amazon.com/Samsung-Galaxy-G920T-32GB-T-Mobile/dp/B011AC4U7A"
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var priceBackground: UIView!
@@ -24,13 +24,20 @@ class WishlistItemViewController: UIViewController {
     
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    var phone : Phone?
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = phone?.name as? String
+        companyLabel.text = phone?.company as? String
+        price.text = String(format: "$%f", phone!.price!)
+        itemPic.image = UIImage(named: phone!.photo!)
+        descriptionLabel.text = phone?.description!
+        label1.text = phone?.features?[0] as? String
+        label2.text = phone?.features?[1] as! String
+        label3.text = phone?.features?[2] as! String
+        label4.text = phone?.features?[3] as! String
+        url = (phone?.url)!
         priceBackground.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
-        label1.text = "\u{2022} Vivid Images with a Fast, Bright Camera"
-        label2.text = "\u{2022} Super Charging and Cord Free"
-        label3.text = "\u{2022} 5.1-inch Quad HD Super AMOLED Screen"
-        label4.text = "\u{2022} Long-Lasting 2550 mAh Fast Charging battery"
         backButton.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
         buyButton.roundCorners([.topLeft,.topRight,.bottomRight, .bottomLeft], radius: 35)
     }
