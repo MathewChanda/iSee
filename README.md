@@ -5,15 +5,6 @@
 Since the rise of COVID-19, shopping in-store has become almost an impossible task. With social distancing being enforced, we've found that many industries that rely on in-person assistance as well as product engagement have found it difficult to find a workaround this issue. 
 
 In particular, we found that there is potential for customers to get infected from hand-on store displays within T-Mobile stores. Additionally, when customers are often faced with a hard decision of finding the best phone for their needs they often look to assistance in the store. However, this often requires interactions with other people which goes against safe COVID-19 practice. Overall, there's potential for spread of COVID-19 when individuals interact with in-store displays as well as when customers interact with employees.
-Expand
-message.txt
-5 KB
-﻿
-## Inspiration
-
-Since the rise of COVID-19, shopping in-store has become almost an impossible task. With social distancing being enforced, we've found that many industries that rely on in-person assistance as well as product engagement have found it difficult to find a workaround this issue. 
-
-In particular, we found that there is potential for customers to get infected from hand-on store displays within T-Mobile stores. Additionally, when customers are often faced with a hard decision of finding the best phone for their needs they often look to assistance in the store. However, this often requires interactions with other people which goes against safe COVID-19 practice. Overall, there's potential for spread of COVID-19 when individuals interact with in-store displays as well as when customers interact with employees.
 
 Therefore, we came up with a solution: iSee. Our product fills the gaps for all in-store experiences that COVID-19 has taken away from T-Mobile customers. Using augmented reality, we're able to allow individuals to interact and view items on display virtually while simultaneously being COVID-19 safe. We also help aid in the experience of comparing phones by implementing a comparison functionality within the app.
 
@@ -48,4 +39,3 @@ We hope to expand the product base of iSee to more items that T-Mobile has to of
 ## Presentation 
 Link: https://create.piktochart.com/output/54409222-my-visual
 
-5 KB
