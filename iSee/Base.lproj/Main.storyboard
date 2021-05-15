@@ -398,7 +398,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RHd-Bk-cmm">
-                                <rect key="frame" x="20" y="502" width="374" height="173"/>
+                                <rect key="frame" x="20" y="482" width="374" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Powerful to use and beautiful to behold. The slim and lightweight, all-metal body and glass design make a bold statement, while the lightning-fast Samsung Exynos® 7420 Octa-core 64-bit processor delivers the most power and speed we’ve ever put in a smartphone.</string>
                                 <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="16"/>

@@ -29,7 +29,7 @@ class WishlistItemViewController: UIViewController {
         super.viewDidLoad()
         nameLabel.text = phone?.name as? String
         companyLabel.text = phone?.company as? String
-        price.text = String(format: "$%f", phone!.price!)
+        price.text = String(format: "$%.0f", phone!.price!)
         itemPic.image = UIImage(named: phone!.photo!)
         descriptionLabel.text = phone?.description!
         label1.text = phone?.features?[0] as? String
